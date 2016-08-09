@@ -1,0 +1,1 @@
+include ':app', ':publishmodule', ':usermodule', ':homemodule', ':coremodule'
