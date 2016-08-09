@@ -6,9 +6,10 @@ import android.os.Bundle;
 /**
  * Created by lenove on 2016/8/9.
  */
-public class UserActivity extends Activity{
+public class UserActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.userlayout);
     }
 }
