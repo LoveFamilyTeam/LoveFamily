@@ -11,7 +11,7 @@ public class Constant {
     //获取父分类信息
     public static String HTTP_CATEGORY=HTTP_WEB+"/printCategory";
     //查询发布信息
-    public static String HTTP_INFO=HTTP_WEB+"/detailInfo";
+    public static String HTTP_INFO=HTTP_WEB+"/detailInfo?is_aprove=1";
     //用户登录
     public static String HTTP_LOGIN=HTTP_WEB+"/isLogin";
     //修改用户密码

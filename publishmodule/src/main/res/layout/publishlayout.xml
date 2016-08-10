@@ -1,9 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hallo World"/>
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="#50C577">
+        <!--根据界面变化而变化   如    装修-建材家居-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择发布类型"
+            android:textSize="30sp"
+            android:layout_marginTop="3sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+    <!--第一排  美食  娱乐  房产   车-->
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal"  android:layout_gravity="center">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/meishi" android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/meishi" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="美食" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/yule" android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/yule" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="娱乐" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/fangchan" android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/fangchan" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="房产" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/che" android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/che" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="车" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--第二排    婚庆   装修   教育   工作  -->
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_gravity="center">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/hunqing" android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/hunqing" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="婚庆" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/zhuangxiu" android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/zhuangxiu" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="装修" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/jiaoyu"  android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/jiaoyu" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="教育" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/gongzuo"  android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/gongzuo" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="工作" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 第三排   百货  跳蚤  商务   便民-->
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_gravity="center">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/baihuo"  android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/baihuo" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="百货" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/tiaozhao"  android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/tiaozhao" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="跳蚤" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/shangwu"  android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/shangwu" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="商务" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/bianmin"  android:layout_margin="10dp">
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/bianmin" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:text="便民" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--第四排  老乡会  其他-->
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/laoxianghui"  android:layout_margin="10dp" >
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/laoxianghui" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content" android:text="老乡会" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:id="@+id/qita"  android:layout_margin="10dp" >
+            <ImageButton
+                android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:background="@null" android:src="@drawable/qita" />
+            <TextView
+                android:layout_width="match_parent" android:layout_height="wrap_content"  android:text="其他" />
+        </LinearLayout>
+
+    </LinearLayout>
 </LinearLayout>
