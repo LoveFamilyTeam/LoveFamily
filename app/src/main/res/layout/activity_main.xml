@@ -5,20 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context="com.example.style.lovefamily.MainActivity">
-    <!--欢迎界面xml-->
-    <!--第一次进来的时候会有轮播图的广告
+
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </android.support.v4.view.ViewPager>
-    -->
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/fragment"
+        android:layout_height="match_parent"
         android:layout_weight="1"
-        ></FrameLayout>
+        >
+    </android.support.v4.view.ViewPager>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -34,12 +28,14 @@
             <ImageView
                 android:layout_width="35sp"
                 android:layout_height="35sp"
+                android:id="@+id/img_home"
                 android:src="@mipmap/home"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="爱家乡"
+                android:id="@+id/text_home"
                 />
         </LinearLayout>
         <LinearLayout
@@ -53,10 +49,12 @@
                 android:layout_width="35sp"
                 android:layout_height="35sp"
                 android:src="@mipmap/publish"
+                android:id="@+id/img_fabu"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:id="@+id/text_fabu"
                 android:text="发布"
                 />
         </LinearLayout>
@@ -71,11 +69,13 @@
                 android:layout_width="35sp"
                 android:layout_height="35sp"
                 android:src="@mipmap/wode"
+                android:id="@+id/img_wode"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="我的"
+                android:id="@+id/text_wode"
                 />
         </LinearLayout>
     </LinearLayout>
