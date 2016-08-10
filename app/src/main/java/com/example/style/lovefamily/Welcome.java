@@ -83,6 +83,7 @@ public class Welcome extends Activity {
                 finish();
             }
         });
+
        //开一个线程
         new Thread(){
             public void run(){
@@ -92,19 +93,13 @@ public class Welcome extends Activity {
                     message.obj = autoCurrIndex ;
                     handler.sendMessage(message);
                     try {
-                        sleep(1500);
+                        sleep(2000);
                     } catch (InterruptedException e) {
                         e.printStackTrace();
                     }
                 }
-
-
             }
-
         }.start();
-
-
-
 
     }
 }
