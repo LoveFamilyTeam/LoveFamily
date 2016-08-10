@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<android.support.v4.view.ViewPager
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/welcom_pager">
+</android.support.v4.view.ViewPager>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="跳过广告"
+        android:id="@+id/comein"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="right"/>
+</FrameLayout>

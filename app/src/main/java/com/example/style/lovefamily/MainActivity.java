@@ -5,9 +5,7 @@ import android.os.Bundle;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.widget.ImageView;
@@ -45,8 +43,8 @@ public class MainActivity extends FragmentActivity {
         img1=(ImageView)findViewById(R.id.img_home);
         img2=(ImageView)findViewById(R.id.img_fabu);
         img3=(ImageView)findViewById(R.id.img_wode);
-        //将首页的字体颜色变为选中后颜色
 
+        //将首页的字体颜色变为选中后颜色
         t1.setTextColor(Color.parseColor("#44AE67"));
         img1.setImageResource(R.mipmap.home_press);
 
@@ -66,7 +64,7 @@ public class MainActivity extends FragmentActivity {
                 return (Fragment) data.get(arg0);
             }
         });
-        // 为选项卡添加事件改变颜色   然后做点击的时候的事件自动  显示对应的碎片
+        // 为选项卡添加事件改变颜色
         vp.setOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             public void onPageSelected(int arg0) {
                 t1.setTextColor(Color.parseColor("#000000"));

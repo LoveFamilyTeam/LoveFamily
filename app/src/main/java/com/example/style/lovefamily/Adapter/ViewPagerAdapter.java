@@ -14,19 +14,16 @@ import java.util.List;
  */
 public class ViewPagerAdapter extends PagerAdapter{
 
-    // 界面列表
+    //界面列表
     private List<View> views;
     private Context context;
-
 
     public ViewPagerAdapter(List<View> views, Context context) {
         this.views = views;
         this.context = context;
     }
-
     @Override
     public void destroyItem(ViewGroup container, int position, Object object) {
-        //super.destroyItem(container, position, object);
         container.removeView(views.get(position));
     }
     //加载viewpager的每个item
@@ -34,7 +31,6 @@ public class ViewPagerAdapter extends PagerAdapter{
     public Object instantiateItem(ViewGroup container, int position) {
         View  v= views.get(position);
         container.addView(v);
-       // Log.v("TAG", "新增一个");
         return v;
     }
     // 获得当前界面数
